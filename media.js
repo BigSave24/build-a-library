@@ -53,6 +53,7 @@ class Book extends Media {
     }
 }
 
+
 class Movie extends Media {
     constructor(director, runTime){
         super(title);
@@ -69,7 +70,19 @@ class Movie extends Media {
     }
 }
 
-// class CD
-// artist songs 
 
+class CD extends Media {
+    constructor(artist, songs){
+        super(title);
+        this._artist = artist;
+        this._songs = songs
+    }
 
+    get artist(){
+        return this._artist
+    }
+
+    get songs(){
+        return this._songs
+    }
+}
