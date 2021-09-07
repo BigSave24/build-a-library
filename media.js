@@ -90,3 +90,34 @@ class CD extends Media {
         return this._songs
     }
 }
+
+
+// Test Classes
+const historyOfEverything = new Book('A Short History of Nearly Everything', 'Bill Bryson', 544)
+
+console.log(historyOfEverything)
+
+historyOfEverything.toggleCheckOutStatus()
+console.log(historyOfEverything.isCheckedOut)
+historyOfEverything.toggleCheckOutStatus()
+console.log(historyOfEverything.isCheckedOut)
+
+historyOfEverything.addRating(4)
+historyOfEverything.addRating(5)
+historyOfEverything.addRating(5)
+console.log(historyOfEverything.getAverageRating())
+
+console.log('===========================')
+
+const speed = new Movie('Speed', 'Jan de Bont', 116)
+console.log(speed)
+
+speed.toggleCheckOutStatus()
+console.log(speed.isCheckedOut)
+
+speed.addRating(1)
+speed.addRating(1)
+speed.addRating(5)
+console.log(speed.getAverageRating())
+
+console.log('===========================')
