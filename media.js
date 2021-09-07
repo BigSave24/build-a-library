@@ -53,8 +53,21 @@ class Book extends Media {
     }
 }
 
-// class Movie 
-// director runTime 
+class Movie extends Media {
+    constructor(director, runTime){
+        super(title);
+        this._director = director;
+        this._runTime = runTime;
+    }
+
+    get director(){
+        return this._director
+    }
+
+    get runTime(){
+        return this._runTime
+    }
+}
 
 // class CD
 // artist songs 
