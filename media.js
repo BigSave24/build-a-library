@@ -31,8 +31,8 @@ class Media {
         return this._isCheckedOut
     }
 
-    toggleCheckedOutStatus(setCheckoutStatus){
-        this._isCheckedOut = setCheckoutStatus
+    set isCheckedOut(isCheckedOutStatus){
+        this._isCheckedOut = isCheckedOutStatus
     }
 }
 
